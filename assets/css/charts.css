@@ -1,0 +1,21 @@
+
+
+#hCharts {
+    height: 400px; 
+    min-width: 310px; 
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#completedEstVSActual {
+    min-width: 310px; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#whoCompleted {
+    height: 200px; 
+    min-width: 150px; 
+    max-width: 200px;
+    margin: 0 auto;
+}
