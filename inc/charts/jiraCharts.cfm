@@ -7,9 +7,9 @@
     $(function() {
         <cfoutput>#theSparklines#</cfoutput>
 
-    Highcharts.setOptions({
-        colors: ['#FDC835', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
-    });
+<!---     Highcharts.setOptions({
+        colors: ['#333333','#FDC835', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
+    }); --->
 
   $('#jContainer').highcharts({
             title: {
@@ -62,7 +62,8 @@
 
         $('#hrsByWeek').highcharts({
             chart: {
-                type: 'column'
+                type: 'column',
+                backgroundColor: '#CCCCCC'
             },
             title: {
                 text: 'Dev Hours By Week'
@@ -72,7 +73,7 @@
                 labels: {
                     rotation: -45,
                     style: {
-                        fontSize: '13px',
+                        fontSize: '10px',
                         fontFamily: 'Verdana, sans-serif'
                     }
                 }
@@ -95,17 +96,18 @@
 
                     <cfoutput>#jContainerData#</cfoutput>
                 ],
+                colors: ['#990000', '#009900', '#000099'],
                 dataLabels: {
                     enabled: true,
                     rotation: -90,
-                    color: '#FFFFFF',
+                    color: '#FDC835',
                     align: 'right',
                     x: 4,
                     y: 10,
                     style: {
-                        fontSize: '13px',
+                        fontSize: '11px',
                         fontFamily: 'Verdana, sans-serif',
-                        textShadow: '0 0 3px black'
+                       // textShadow: '0 0 3px black'
                     }
                 }
             }]
